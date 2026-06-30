@@ -1,5 +1,4 @@
-# publishing-os
-A modular AI-powered publishing system for creating, automating, and scaling nonfiction book production with n8n.
+
 # Publishing OS
 
 Publishing OS is a modular AI-powered publishing system built with n8n.
