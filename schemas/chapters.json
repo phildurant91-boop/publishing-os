@@ -1,0 +1,61 @@
+{
+  "chapter_id": "string (e.g. PROJ-001-CH03)",
+  "project_id": "string",
+
+  "chapter_number": 1,
+  "title": "string",
+
+  "status": "not_started | briefing | researching | writing | editing | QA | approved",
+
+  "objective": "string (what the reader should learn or achieve in this chapter)",
+
+  "summary": "string (short overview of chapter content)",
+
+  "word_count_target": 3000,
+
+  "content": {
+    "brief": "string (structured instructions from Chapter Brief Agent)",
+    "research": {
+      "key_concepts": [],
+      "steps": [],
+      "tools": [],
+      "warnings": [],
+      "common_mistakes": [],
+      "references": []
+    },
+
+    "draft": "string (raw chapter written by Writing Agent)",
+
+    "edited": "string (edited version)",
+
+    "final": "string (approved final chapter text)"
+  },
+
+  "quality": {
+    "readability_score": null,
+    "fact_check_status": "not_checked | pass | fail",
+    "qa_status": "pending | approved | revision_required",
+    "issues": []
+  },
+
+  "style": {
+    "tone": "practical | friendly | instructional",
+    "reading_level": "beginner | intermediate | advanced",
+    "format_rules": [
+      "use checklists",
+      "use short sections",
+      "include practical examples"
+    ]
+  },
+
+  "dependencies": {
+    "previous_chapter": "chapter_id or null",
+    "next_chapter": "chapter_id or null"
+  },
+
+  "metadata": {
+    "created_at": "ISO-8601 timestamp",
+    "updated_at": "ISO-8601 timestamp",
+    "version": 1
+  }
+}
