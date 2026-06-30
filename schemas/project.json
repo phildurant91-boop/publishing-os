@@ -1,0 +1,53 @@
+{
+  "project_id": "string (unique id, e.g. DIY-2026-001)",
+  
+  "topic": "string",
+  "title": "string",
+  
+  "status": "initiated",
+
+  "created_at": "ISO-8601 timestamp",
+  "updated_at": "ISO-8601 timestamp",
+
+  "target_audience": {
+    "level": "beginner | intermediate | advanced",
+    "description": "string describing the reader"
+  },
+
+  "book": {
+    "goal": "string (what transformation does the reader get?)",
+    "tone": "practical | friendly | instructional",
+    "target_word_count": 30000,
+    "estimated_chapters": 10
+  },
+
+  "market": {
+    "niche": "string (e.g. gardening, DIY)",
+    "angle": "string (unique positioning of the book)",
+    "competition_level": "low | medium | high",
+    "demand_level": "low | medium | high"
+  },
+
+  "outline": {
+    "chapters": [
+      {
+        "chapter_number": 1,
+        "title": "string",
+        "summary": "string",
+        "word_count_target": 3000,
+        "status": "not_started"
+      }
+    ]
+  },
+
+  "progress": {
+    "current_stage": "project_manager | market_research | planning | research | writing | editing | QA | complete",
+    "completion_percentage": 0
+  },
+
+  "metadata": {
+    "keywords": [],
+    "categories": [],
+    "language": "en"
+  }
+}
