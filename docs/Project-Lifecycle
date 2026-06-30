@@ -1,0 +1,324 @@
+# Project Lifecycle (Publishing OS)
+
+## Overview
+
+This document defines the end-to-end lifecycle of a book project within Publishing OS, from initial idea through to publication and marketing.
+
+Every AI agent in the system operates at a specific stage of this lifecycle. The lifecycle ensures consistency, repeatability, and clear responsibility boundaries between agents.
+
+---
+
+# Stage 1: Idea Capture
+
+## Input
+
+* Topic or niche idea
+
+## Process
+
+A book idea is submitted manually or generated via future market discovery tools.
+
+## Output
+
+* Raw project request
+
+---
+
+# Stage 2: Project Initialization
+
+## Agent: Project Manager
+
+## Process
+
+* Creates a unique Project ID
+* Generates folder structure
+* Initializes project.json
+* Sets default parameters:
+
+  * Target audience
+  * Estimated word count
+  * Project status = "initiated"
+
+## Output
+
+* Structured project file
+* Project workspace created
+
+---
+
+# Stage 3: Market Validation
+
+## Agent: Market Research
+
+## Process
+
+* Analyzes niche demand
+* Identifies reader pain points
+* Reviews competition
+* Evaluates profitability potential
+* Suggests positioning angle
+
+## Output
+
+* Market analysis report
+* Recommendation: proceed / revise / reject
+
+---
+
+# Stage 4: Book Planning
+
+## Agent: Book Planner
+
+## Process
+
+* Defines book promise
+* Identifies target reader avatar
+* Creates chapter outline
+* Defines learning progression
+* Assigns estimated word counts per chapter
+
+## Output
+
+* Full book outline
+* Book structure document
+
+---
+
+# Stage 5: Research
+
+## Agent: Research Agent
+
+## Process
+
+* Gathers structured information per chapter:
+
+  * Best practices
+  * Technical knowledge
+  * Safety considerations
+  * Tools and materials
+  * Common mistakes
+  * Step-by-step processes
+
+## Output
+
+* Chapter research packets
+
+---
+
+# Stage 6: Chapter Briefing
+
+## Agent: Chapter Brief Agent
+
+## Process
+
+* Converts research into structured writing instructions
+* Defines:
+
+  * Objective
+  * Key points
+  * Required sections
+  * Warnings
+  * Examples
+
+## Output
+
+* Chapter brief documents
+
+---
+
+# Stage 7: Writing
+
+## Agent: Writing Agent
+
+## Process
+
+* Converts chapter briefs into full chapters
+* Maintains consistent tone and style
+* Includes practical examples and checklists
+* Avoids introducing new unsupported facts
+
+## Output
+
+* Draft chapters
+
+---
+
+# Stage 8: Editing
+
+## Agent: Editing Agent
+
+## Process
+
+* Improves clarity and flow
+* Removes repetition
+* Ensures consistent tone
+* Fixes grammar and structure issues
+
+## Output
+
+* Edited chapters
+
+---
+
+# Stage 9: Quality Assurance
+
+## Agent: QA Agent
+
+## Process
+
+* Checks for:
+
+  * Missing sections
+  * Logical inconsistencies
+  * Hallucinated or unsupported claims
+  * Safety concerns
+  * Structural issues
+
+## Output
+
+* Approval or revision request
+
+---
+
+# Stage 10: Book Assembly
+
+## Agent: Book Assembly Agent
+
+## Process
+
+* Combines all chapters into final manuscript
+* Adds:
+
+  * Introduction
+  * Conclusion
+  * Table of contents
+  * Glossary
+  * Resources section
+
+## Output
+
+* Complete manuscript
+
+---
+
+# Stage 11: Publishing Metadata
+
+## Agent: Metadata Agent
+
+## Process
+
+* Generates:
+
+  * Title options
+  * Subtitle
+  * Description
+  * Keywords
+  * Categories
+  * Author bio
+
+## Output
+
+* Publishing-ready metadata package
+
+---
+
+# Stage 12: Formatting (Future Phase)
+
+## Agent: Formatter (Phase 2)
+
+## Process
+
+* Converts manuscript into:
+
+  * EPUB
+  * PDF
+  * Print-ready file
+
+## Output
+
+* Formatted book files
+
+---
+
+# Stage 13: Publication (Future Phase)
+
+## Agent: Publishing Agent (Phase 2)
+
+## Process
+
+* Uploads to platforms (e.g. Amazon KDP)
+* Applies metadata
+* Confirms publication status
+
+## Output
+
+* Published book listing
+
+---
+
+# Stage 14: Marketing (Future Phase)
+
+## Agent: Marketing Agent (Phase 2)
+
+## Process
+
+* Generates promotional content:
+
+  * Social media posts
+  * Blog articles
+  * Email sequences
+  * Short-form video scripts
+
+## Output
+
+* Marketing asset package
+
+---
+
+# Lifecycle Principles
+
+## Linear Flow (Default)
+
+The system is designed as a linear pipeline from idea → publication.
+
+Each stage depends on the output of the previous stage.
+
+---
+
+## Feedback Loops
+
+Certain stages may loop:
+
+* QA → Writing (if issues found)
+* Editing → Writing (if clarity issues persist)
+* Market Research → Book Planning (if positioning is weak)
+
+---
+
+## Human Oversight
+
+Human review is recommended at:
+
+* Market validation stage
+* Final QA stage
+* Publishing stage
+
+---
+
+## Modularity
+
+Each stage is handled by a dedicated agent.
+
+Agents can be improved or replaced without changing the entire system.
+
+---
+
+# Future Extensions
+
+The lifecycle is designed to expand into:
+
+* Multi-book batch generation
+* Automated niche discovery
+* Continuous content publishing
+* Multi-platform distribution
+* AI-assisted marketing ecosystems
