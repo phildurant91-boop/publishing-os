@@ -24,7 +24,7 @@
       "authoritative",
       "technical",
       "conversational"
-    ]
+    ],
     "target_word_count": "integer",
     "estimated_chapters": "integer"
   },
@@ -59,7 +59,7 @@
         "Kindle Paperback",
         "Kindle eBook"
     ]
-  }
+  },
   
   "metadata": {
     "keywords": [],
