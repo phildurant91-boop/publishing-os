@@ -10,22 +10,31 @@
   "updated_at": "ISO-8601 timestamp",
 
   "target_audience": {
-    "level": "beginner | intermediate | advanced",
+    "level": "",
     "description": "string describing the reader"
   },
 
   "book": {
     "goal": "string (what transformation does the reader get?)",
-    "tone": "practical | friendly | instructional",
-    "target_word_count": 30000,
-    "estimated_chapters": 10
+    "tone": [
+      "practical",
+      "friendly",
+      "instructional",
+      "encouraging",
+      "authoritative",
+      "technical",
+      "conversational"
+    ]
+    "target_word_count": "integer",
+    "estimated_chapters": "integer"
   },
 
   "market": {
-    "niche": "string (e.g. gardening, DIY)",
+    "genre": "string",
+    "niche": "string",
     "angle": "string (unique positioning of the book)",
-    "competition_level": "low | medium | high",
-    "demand_level": "low | medium | high"
+    "competition_level": "",
+    "demand_level": ""
   },
 
   "outline": {
@@ -44,7 +53,14 @@
     "current_stage": "project_manager | market_research | planning | research | writing | editing | QA | complete",
     "completion_percentage": 0
   },
-
+  
+  "publishing": {
+    "formats": [
+        "Kindle Paperback",
+        "Kindle eBook"
+    ]
+  }
+  
   "metadata": {
     "keywords": [],
     "categories": [],
